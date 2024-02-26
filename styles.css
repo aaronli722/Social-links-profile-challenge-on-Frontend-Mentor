@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+/* Global Setting */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    text-align: center;
+}
+
+/* Font Setting */
+
+h1, p, .links {
+    font-family: Inter, san-serif;
+    color: var(--White);
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+p, .links {
+    font-size: 1.2rem;
+}
+
+a {
+    font-weight: 600;
+    color: var(--White);
+    text-decoration: none;
+}
+/* Background */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Off-Black);
+}
+
+/* Card */
+
+.profile-card {
+    margin: auto;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 335px;
+    background-color: var(--Dark-Grey);
+}
+
+/* Aavtar */
+
+.avatar {
+    display: block;
+    margin: 0 auto 2.5rem auto;
+    width: 100%;
+    max-width: 75px;
+    border-radius: 50%;
+}
+
+/* Name */
+
+.name {
+    margin-bottom: 1rem;
+}
+
+/* Location */
+
+.location {
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    color: var(--Green);
+}
+
+/* Quote */
+
+.quote {
+    margin-bottom: 1.8rem;
+}
+
+/* Social Link */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    margin: 0.7rem 0;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Grey);
+}
+
+.links:hover {
+    background-color: var(--Green);
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 400px) {
+    
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    p,.links {
+        font-size: 1.4rem;
+    }
+
+    .profile-card {
+        padding: 2.5rem;
+        max-width: 325px;
+    }
+
+    .avatar {
+        max-width: 90px;
+    }
+
+    .links {
+        padding: 1.5rem;
+    }
+}
